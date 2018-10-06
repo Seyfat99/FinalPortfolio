@@ -1,0 +1,51 @@
+.contact-wrap {
+  h2 {
+    text-align: center;
+    margin: 70px 0 45px;
+    font: 400 40px "Quicksand";
+  }
+  form {
+    background: #eee;
+    padding: 10px 0 20px;
+  }
+  &__input-wrap {
+    max-width: 600px;
+    min-width: 250px;
+    padding: 10px 30px;
+    margin: 0 auto;
+
+    label {
+      display: block;
+      color: black;
+      font: 400 18px "Quicksand";
+      text-transform: uppercase;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    input,
+    textarea {
+      width: 100%;
+      color: black;
+      font: 400 18px "Quicksand";
+      background: none;
+      letter-spacing: 1px;
+      padding: 3px 20px;
+    }
+  }
+  &__submit-btn {
+    display: block;
+    margin: 10px auto 0;
+    width: 150px;
+    height: 40px;
+    font: 400 18px "Quicksand";
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: #0b93ee;
+    &:hover {
+      background: #1058a4;
+    }
+  }
+}

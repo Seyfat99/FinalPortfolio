@@ -1,0 +1,43 @@
+.cards-container {
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  @media (min-width: 1170px) {
+    justify-content: flex-start;
+    max-width: 1170px;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin: 70px 0 45px;
+    font: 400 40px "Quicksand";
+  }
+}
+.project-card {
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 0px 45px rgba(0, 0, 0, 0.25);
+  margin: 20px auto;
+  @media (min-width: 1170px) {
+    margin: 20px 20px;
+  }
+
+  &__img-wrap {
+    height: 230px;
+    width: inherit;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  p {
+    font: 400 16px "Quicksand";
+    text-align: center;
+    padding: 0 20px;
+  }
+}

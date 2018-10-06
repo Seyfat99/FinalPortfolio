@@ -1,0 +1,19 @@
+@mixin slidingUnderline {   // Sliding border bottom on a tags
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width ease 0.5s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@mixin centerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

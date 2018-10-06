@@ -1,0 +1,17 @@
+[
+  {
+    "name": "MyMove Project",
+    "description": "Recreated The MyMove Website From A Sketch File",
+    "image": "../../../static/img/MyMove.png"
+  },
+  {
+    "name": "RoyalRentals",
+    "description": "An Ecommerce Website I Created During RoadtoHire",
+    "image": "../../../static/img/RoyalRentals.png"
+  },
+  {
+    "name": "Guessing Game",
+    "description": "A Guessing Game That Ranges From 1 - 100 and Gives You Your Highscore",
+    "image": "../../../static/img/guessing-game.jpg"
+  }
+]
