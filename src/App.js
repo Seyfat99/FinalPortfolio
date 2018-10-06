@@ -8,7 +8,7 @@ class App extends Component {
     projects: []
   };
   componentDidMount() {
-    fetch("http://api.jsonbin.io/b/5bb7a238a97c597b3c603f61/2")
+    fetch("https://api.jsonbin.io/b/5bb7a238a97c597b3c603f61/2")
       .then(response => response.json())
       .then(res => this.setState({ projects: res }));
   }
