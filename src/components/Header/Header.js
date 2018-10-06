@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   window.onscroll = () => {
@@ -27,7 +28,7 @@ const Header = () => {
             </a>
           </li>
           <li className="top-nav__list-item">
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="top-nav__list-item">
             <a href="#About">About</a>
