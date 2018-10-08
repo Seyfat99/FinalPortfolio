@@ -5,10 +5,23 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
 import Skills from "../Skills/Skills";
-const Home = (props) => {
+import MobileNav from "../MobileNav/MobileNav";
+const Home = props => {
+
+  const openNav = () => {
+    let mobileNav = document.querySelector(".mobile-nav");
+
+    if (mobileNav.style.right === "-100vw") {
+      mobileNav.style.right = "0";
+    } else {
+      mobileNav.style.right = "-100vw";
+    }
+  };
+
   return (
     <div>
-      <Header />
+      <MobileNav toggleMobileNav={openNav} />
+      <Header toggleMobileNav={openNav}/>
       <Hero />
       <Portfolio projects={props.projects} />
       <Skills />

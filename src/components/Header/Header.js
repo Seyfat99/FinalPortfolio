@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = props => {
   window.onscroll = () => {
     stickyNav();
   };
@@ -18,6 +18,14 @@ const Header = () => {
     }
   };
 
+  const smoothScroll = id => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+  };
+ 
   return (
     <header>
       <nav className="top-nav">
@@ -28,19 +36,25 @@ const Header = () => {
             </a>
           </li>
           <li className="top-nav__list-item">
-            <NavLink to="/">Home</NavLink>
+            <a href >Home</a>
           </li>
           <li className="top-nav__list-item">
-            <a href="#About">About</a>
+            <a href onClick={() => smoothScroll("About")}>
+              About
+            </a>
           </li>
           <li className="top-nav__list-item">
-            <a href="#Portfolio">Portfolio</a>
+            <a href onClick={() => smoothScroll("Portfolio")}>
+              Portfolio
+            </a>
           </li>
           <li className="top-nav__list-item">
-            <a href="#Contact">Contact</a>
+            <a href onClick={() => smoothScroll("Contact")}>
+              Contact
+            </a>
           </li>
         </ul>
-        <div className="top-nav__mobile-menu">
+        <div onClick={props.toggleMobileNav} className="top-nav__mobile-menu">
           <i className="fas fa-bars" />
         </div>
       </nav>

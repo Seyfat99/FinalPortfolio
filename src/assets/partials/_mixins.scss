@@ -1,10 +1,10 @@
-@mixin slidingUnderline {   // Sliding border bottom on a tags
+@mixin slidingUnderline($bgColor) {   // Sliding border bottom on a tags
   &::after {
     content: "";
     display: block;
     width: 0;
     height: 1px;
-    background: white;
+    background: $bgColor;
     transition: width ease 0.5s;
   }
   &:hover::after {

@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero">
       <p>I'm A Junior Web Developer</p>
       <h1>Seyfat Khamidov</h1>
-      <img src={DownArrow} alt="Down Arrow" />
+      <a href="#Portfolio"><img src={DownArrow} alt="Down Arrow" /></a>
     </div>
   );
 };

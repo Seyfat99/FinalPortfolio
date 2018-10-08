@@ -34,7 +34,8 @@
       font: 400 20px "Quicksand";
       text-transform: uppercase;
       letter-spacing: 1px;
-      @include slidingUnderline;
+      @include slidingUnderline(white);
+      cursor: pointer;
     }
   }
   &__logo {

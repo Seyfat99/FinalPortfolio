@@ -1,8 +1,9 @@
 .about-wrap {
   h2 {
     text-align: center;
-    margin: 70px 0 45px;
+    padding: 90px 0 45px;
     font: 400 40px "Quicksand";
+    margin: 0;
   }
   &__img-text-wrap {
     @media (min-width: 768px) {
@@ -37,16 +38,17 @@
     font: 400 18px "Quicksand";
     letter-spacing: 1px;
   }
-  button {
+  a {
     display: block;
-    margin: 45px auto;
+    margin: 45px auto 0;
+    text-decoration: none;
+    text-align: center;
     font: 400 18px "Quicksand";
-    border: none;
     border-radius: 50px;
+    padding: 10px;
     color: white;
     background: #0b93ee;
     width: 150px;
-    height: 40px;
 
     box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
     &:hover {

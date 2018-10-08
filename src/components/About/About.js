@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </div>
 
-      <button>My Resume</button>
+      <a href="/Resume/Seyfat_Resume.pdf" download>My Resume</a>
     </section>
   );
 };
