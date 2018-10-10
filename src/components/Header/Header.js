@@ -2,6 +2,7 @@ import React from "react";
 // import { NavLink } from "react-router-dom";
 
 const Header = props => {
+
   window.onscroll = () => {
     stickyNav();
   };
@@ -17,14 +18,6 @@ const Header = props => {
       nav.classList.remove("top-nav--sticky");
     }
   };
-
-  const smoothScroll = id => {
-    let element = document.getElementById(id);
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
-  };
  
   return (
     <header>
@@ -36,20 +29,20 @@ const Header = props => {
             </a>
           </li>
           <li className="top-nav__list-item">
-            <a href >Home</a>
+            <a href onClick={() => props.smoothScroll("Home")}>Home</a>
           </li>
           <li className="top-nav__list-item">
-            <a href onClick={() => smoothScroll("About")}>
+            <a href onClick={() => props.smoothScroll("About")}>
               About
             </a>
           </li>
           <li className="top-nav__list-item">
-            <a href onClick={() => smoothScroll("Portfolio")}>
+            <a href onClick={() => props.smoothScroll("Portfolio")}>
               Portfolio
             </a>
           </li>
           <li className="top-nav__list-item">
-            <a href onClick={() => smoothScroll("Contact")}>
+            <a href onClick={() => props.smoothScroll("Contact")}>
               Contact
             </a>
           </li>

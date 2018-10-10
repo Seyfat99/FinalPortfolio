@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  background: #093462;
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+  &__unord-list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 400px;
+    li {
+        margin: 0 auto;
+    }
+    i {
+        font-size: 50px;
+        color: white;
+    }
+  }
+}
