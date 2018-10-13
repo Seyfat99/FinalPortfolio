@@ -1,5 +1,5 @@
 import React from "react";
-
+import Resume from "../../Resume/Seyfat_Resume.pdf"
 const About = () => {
   return (
     <section className="about-wrap" id="About">
@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </div>
 
-      <a href="/Resume/Seyfat_Resume.pdf" download>My Resume</a>
+      <a href={Resume} download>My Resume</a>
     </section>
   );
 };
