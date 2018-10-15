@@ -9,6 +9,7 @@ const Portfolio = props => {
       </div>
       <p>{project.name}</p>
       <p>{project.description}</p>
+      <a target="_blank" rel="noopener noreferrer" href={project.link}>GitHub</a>
     </div>
   );
 };

@@ -19,7 +19,7 @@
 }
 .project-card {
   width: 350px;
-  height: 350px;
+  height: 400px;
   box-shadow: 0 0px 45px rgba(0, 0, 0, 0.25);
   margin: 20px auto;
   @media (min-width: 1170px) {
@@ -40,5 +40,20 @@
     font: 400 16px "Quicksand";
     text-align: center;
     padding: 0 20px;
+  }
+  a {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font: 400 18px "Quicksand";
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+    background: #0b93ee;
+    &:hover {
+      background: #1058a4;
+    }
   }
 }
