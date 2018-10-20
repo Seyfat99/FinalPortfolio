@@ -5,16 +5,22 @@ const Footer = () => {
     <footer className="footer">
       <ul className="footer__unord-list">
         <li>
-          <i className="fab fa-facebook-square" />
+          <a
+            href="https://github.com/Seyfat99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github-square" />
+          </a>
         </li>
         <li>
-          <i className="fab fa-instagram" />
-        </li>
-        <li>
-          <i className="fab fa-linkedin" />
-        </li>
-        <li>
-          <i className="fab fa-twitter-square" />
+          <a
+            href="https://www.linkedin.com/in/seyfat-khamidov-16548677/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin" />
+          </a>
         </li>
       </ul>
     </footer>
