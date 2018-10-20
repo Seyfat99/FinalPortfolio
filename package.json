@@ -2,6 +2,7 @@
   "name": "finalportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seyfat99.github.io/FinalPortfolio/",
   "dependencies": {
     "elevator.js": "^1.0.1",
     "gh-pages": "^2.0.1",
