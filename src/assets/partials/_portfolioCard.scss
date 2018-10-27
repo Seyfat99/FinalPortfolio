@@ -9,7 +9,7 @@
     justify-content: flex-start;
     max-width: 1170px;
   }
-  h2 {
+  &__header {
     width: 100%;
     text-align: center;
     padding: 90px 0 45px;
@@ -19,34 +19,52 @@
 }
 .project-card {
   width: 350px;
-  height: 400px;
+  height: 350px;
   box-shadow: 0 0px 45px rgba(0, 0, 0, 0.25);
   margin: 20px auto;
+  border-radius: 5px;
+
   @media (min-width: 1170px) {
     margin: 20px 20px;
   }
 
   &__img-wrap {
+    position: relative;
     height: 230px;
     width: inherit;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
 
     img {
+      border-radius: 5px;
       height: 100%;
       width: 100%;
     }
   }
-  p {
-    font: 400 16px "Quicksand";
-    text-align: center;
-    padding: 0 20px;
+  &__img-overlay {
+    position: absolute;
+    background: rgba(9, 52, 98, 0.9);
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font: 300 30px "Quicksand";
+      text-align: center;
+      padding: 0 20px;
+      color: white;
+      letter-spacing: 1px;
+    }
   }
-  a {
+  &__button-wrap {
+    display: flex;
+    align-items: center;
+    height: calc(350px - 230px);
+  }
+  button {
     display: block;
-    margin: 0 auto;
-    width: 100px;
-    text-decoration: none;
-    text-align: center;
+    margin: auto auto;
+    width: 150px;
     font: 400 18px "Quicksand";
     border-radius: 50px;
     padding: 5px;
@@ -54,6 +72,72 @@
     background: #0b93ee;
     &:hover {
       background: #1058a4;
+    }
+  }
+}
+.portfolio-descrip-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(9, 52, 98, 0.99);
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  .header {
+    font: 300 45px "Quicksand";
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 100px 0 0;
+  }
+  &__close {
+    background: url("../img/delete.svg") cover;
+    width: 25px;
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    cursor: pointer;
+  }
+  &__img-wrap {
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__descrip-wrap {
+    width: 50%;
+    margin: 0 auto;
+    p {
+      font: 300 20px "Quicksand";
+      color: white;
+    }
+  }
+  &__links-wrap {
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    a {
+      display: block;
+      text-decoration: none;
+      margin: auto auto;
+      width: 100px;
+      text-align: center;
+      font: 300 18px "Quicksand";
+      border-radius: 50px;
+      padding: 5px;
+      color: white;
+      background: #0b93ee;
+      &:hover {
+        background: #1058a4;
+      }
     }
   }
 }

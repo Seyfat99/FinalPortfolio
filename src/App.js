@@ -7,16 +7,18 @@ class App extends Component {
     projects: []
   };
   componentDidMount() {
-    fetch("https://api.jsonbin.io/b/5bc4b22b716f9364f8c46a73")
+    fetch("https://api.jsonbin.io/b/5bd3d1a8adf9f5652a662289/1")
       .then(response => response.json())
-      .then(res => this.setState({ projects: res },() => {
-        console.log(this.state.projects)
-      }));
+      .then(res =>
+        this.setState({ projects: res }, () => {
+          console.log(this.state.projects);
+        })
+      );
   }
 
   render() {
-    return <Home projects={this.state.projects} />}
+    return <Home projects={this.state.projects} />;
+  }
 }
 
 export default App;
-
