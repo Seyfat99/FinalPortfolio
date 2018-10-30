@@ -60,6 +60,7 @@
     display: flex;
     align-items: center;
     height: calc(350px - 230px);
+    background: linear-gradient(to right bottom, white 75%, #1058a4 50%);
   }
   button {
     display: block;
@@ -77,45 +78,57 @@
 }
 .portfolio-descrip-wrap {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: rgba(9, 52, 98, 0.99);
   position: fixed;
   top: 0;
   z-index: 50;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   left: 0;
+  overflow-y: scroll;
+
   .header {
     font: 300 45px "Quicksand";
     color: white;
     width: 100%;
     text-align: center;
     height: 50px;
-    padding: 100px 0 0;
+    padding: 20px 0 0;
   }
   &__close {
     background: url("../img/delete.svg") cover;
     width: 25px;
     position: absolute;
-    top: 15px; 
+    top: 15px;
     right: 15px;
     cursor: pointer;
   }
   &__img-wrap {
-    margin: 0 auto;
-    width: 500px;
-    height: 300px;
+    margin: 20px auto;
+    width: 375px;
+    height: 225px;
     img {
       width: 100%;
       height: 100%;
     }
+    @media (min-width: 550px) {
+      width: 500px;
+      height: 300px;
+    }
   }
   &__descrip-wrap {
-    width: 50%;
+    width: 375px;
     margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    background: white;
+    padding: 0 10px;
     p {
       font: 300 20px "Quicksand";
-      color: white;
+      color: black;
+    }
+    @media (min-width: 550px) {
+      width: 500px;
     }
   }
   &__links-wrap {

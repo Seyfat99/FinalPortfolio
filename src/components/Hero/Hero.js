@@ -4,7 +4,7 @@ import DownArrow from "../../assets/img/down-arrow.svg";
 const Hero = props => {
   return (
     <div className="hero" id="Home">
-      <p>I'm A Junior Web Developer</p>
+      <p>I'm A Software Developer</p>
       <h1>Seyfat Khamidov</h1>
       <div>
         <a href onClick={() => props.smoothScroll("Portfolio")}>
