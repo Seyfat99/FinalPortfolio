@@ -8,20 +8,19 @@ const About = () => {
         <div className="about-wrap__img-wrap" />
         <div className="about-wrap__text-wrap">
           <p>
-            Hello World! My name is Seyfat Khamidov and I am a junior web
-            developer. I was born in Russia but my ethnicity is Turkish. My
-            family and I moved to the USA in 2005 to better our lives through
-            the various oppurtunities. I'm 19 years old and want to pursue a
+            Hello! My name is Seyfat Khamidov and I am a software
+            developer. I come from a Turkish background but was born in Russia. My
+            family and I moved to the United States in 2005 to better our lives through
+            various oppurtunities. I'm 19 years old and want to pursue a
             career in the technology field.
           </p>
           <p>
             Other than coding, I like to spend my free time outside like going
             to the mountains, lake or playing soccer with some friends. I also
-            like to binge watch shows on netflix which is very fun.
+            like to binge watch shows on netflix.
           </p>
         </div>
       </div>
-
       <a href={Resume} download>My Resume</a>
     </section>
   );

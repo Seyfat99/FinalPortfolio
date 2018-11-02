@@ -61,18 +61,20 @@
     align-items: center;
     height: calc(350px - 230px);
     background: linear-gradient(to right bottom, white 75%, #1058a4 50%);
-  }
-  button {
-    display: block;
-    margin: auto auto;
-    width: 150px;
-    font: 400 18px "Quicksand";
-    border-radius: 50px;
-    padding: 5px;
-    color: white;
-    background: #0b93ee;
-    &:hover {
-      background: #1058a4;
+
+    button {
+      display: block;
+      margin: auto auto;
+      width: 150px;
+      font: 400 18px "Quicksand";
+      border: none;
+      border-radius: 50px;
+      padding: 5px;
+      color: white;
+      background: #0b93ee;
+      &:hover {
+        background: #1058a4;
+      }
     }
   }
 }

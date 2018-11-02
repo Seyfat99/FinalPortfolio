@@ -10,7 +10,7 @@ const Contact = () => {
 
         <div className="contact-wrap__form-heading-wrap">
           <h2>Let's Work Together!</h2>
-          <form>
+          <form method="get">
             <div className="contact-wrap__input-wrap">
               <label htmlFor="firstName">First Name</label>
               <input type="text" required name="firstName" id="firstName" />
